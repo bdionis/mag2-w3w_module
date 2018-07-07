@@ -1,7 +1,7 @@
 var config = {
-    "map": {
-        "*": {
-            "w3wjs": "js/w3w_modal"
+    map: {
+        '*': {
+            'w3w_modal': 'Extait_W3W/js/w3w_modal'
         }
     }
 };
