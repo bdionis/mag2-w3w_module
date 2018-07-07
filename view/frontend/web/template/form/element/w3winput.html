@@ -1,0 +1,20 @@
+<div class="w3w-container">
+    <input class="input-text w3w-input" type="text" data-bind="
+    value: value,
+    valueUpdate: 'keyup',
+    hasFocus: focused,
+    attr: {
+        name: inputName,
+        placeholder: placeholder,
+        'aria-describedby': getDescriptionId(),
+        'aria-required': required,
+        'aria-invalid': error() ? true : 'false',
+        id: uid,
+        disabled: disabled
+    }" />
+    <i class="w3w-icon w3w-icon-input" title="W3W Map">&#x3f;</i>
+</div>
+
+<div id="w3w-map-modal" style="display: none;">
+    <div>W3W Map will be there</div>
+</div>

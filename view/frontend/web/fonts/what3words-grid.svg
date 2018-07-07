@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2016 by original authors @ fontello.com</metadata>
+<defs>
+<font id="what3words-grid" horiz-adv-x="1000" >
+<font-face font-family="what3words-grid" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="what3words-grid" unicode="&#x2f;" d="M967 817v-934h-934v934h934m33 33h-1000v-1000h1000v1000l0 0z m-749-710c4-1 8-2 12-2 14 0 27 9 32 23l130 355c6 18-3 37-21 44-18 6-37-3-44-20l-129-355c-3-9-3-19 0-27 4-9 11-15 20-18z m153 18c4-9 11-15 20-18 4-2 8-2 12-2 14 0 27 9 32 23l130 355c6 18-3 37-21 44-18 6-37-3-44-20l-130-355c-3-9-3-19 1-27z m173 0c4-9 10-15 19-18 4-2 8-2 12-2 15 0 27 9 33 23l129 355c6 18-3 37-20 44-19 6-38-3-45-20l-129-355c-4-9-3-19 1-27z" horiz-adv-x="1000" />
+
+<glyph glyph-name="what3words-grid-fill" unicode="&#x3f;" d="M0 850v-1000h1000v1000h-1000z m263-712c-4 0-8 1-12 2-8 3-15 10-19 18-4 8-5 18-1 26l129 355c7 18 26 27 44 21 18-7 28-26 21-44l-130-355c-5-14-18-23-32-23z m172 0c-4 0-8 1-11 2-9 3-16 10-20 18-4 8-4 18-1 26l129 355c7 18 27 28 45 21 18-7 27-26 20-44l-129-355c-5-14-18-23-33-23z m335 378l-130-355c-5-14-18-23-32-23-4 0-8 1-12 2-9 3-16 10-20 18-4 8-4 18-1 26l130 355c6 18 26 28 44 21 18-6 27-26 21-44z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

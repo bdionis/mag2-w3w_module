@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="extait_w3w" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>What3Words</label>
+            <tab>extait</tab>
+            <resource>Extait_W3W::w3w_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General Settings</label>
+                <field id="w3w_api_key" translate="label comment" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>What3Words API key</label>
+                    <comment>Enter your What3Words API key.</comment>
+                </field>
+                <field id="google_api_key" translate="label comment" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Google API key</label>
+                    <comment>Enter your Google API key.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
