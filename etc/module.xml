@@ -3,6 +3,7 @@
     <module name="Extait_W3W" setup_version="0.0.2">
         <sequnce>
             <module name="Magento_Ui"/>
+            <module name="Magento_Checkout"/>
         </sequnce>
     </module>
 </config>

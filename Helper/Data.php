@@ -14,8 +14,20 @@ class Data extends AbstractHelper
     /**
      * Config XML paths.
      */
+    const W3W_ONLY = 'extait_w3w/general/w3w_only';
     const W3W_API_KEY = 'extait_w3w/general/w3w_api_key';
     const GOOGLE_API_KEY = 'extait_w3w/general/google_api_key';
+
+    /**
+     * @return mixed
+     */
+    public function getCheckIfW3wOnly()
+    {
+        return $this->scopeConfig->getValue(
+            self::W3W_ONLY,
+            ScopeInterface::SCOPE_STORE
+        );
+    }
 
     /**
      * @return mixed

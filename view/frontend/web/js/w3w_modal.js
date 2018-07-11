@@ -1,50 +1,92 @@
-// require(
-//     [
-//         'jquery',
-//         'Magento_Ui/js/modal/modal'
-//     ],
-//     function ($, modal) {
+define(
+    [
+        'domReady!',
+        'jquery',
+        'mage/translate',
+        'Magento_Ui/js/modal/modal',
+        'Magento_Ui/js/modal/alert',
+        'jquery/ui'
+    ], function(dom, $, $t, modal, alert){
+        'use strict';
+
+        $.widget('extait.w3w_modal', {
+            options: {
+                modalID: '#w3w-map-modal',
+                modalClass: 'extait-w3w-popup',
+                modalTitle: $t('What3Words Modal Map'),
+            },
+
+            _init: function () {
+                var popup = modal(this.getModalOptions(), this.options.modalClass);
+
+                $(this.element).click(function () {
+                    alert('hren');
+                    popup.openModal();
+                });
+            },
+
+            getModalOptions: function () {
+                var widget = this;
+
+                return {
+                    type: 'popup',
+                    responsive: true,
+                    innerScroll: true,
+                    title: widget.options.modalTitle,
+                    modalClass: widget.options.modalClass,
+                    buttons: [{
+                        text: $('Close'),
+                        class: 'action primary',
+                        click: function () {
+                            var popup = this;
+                            popup.closeModal();
+                        }
+                    }]
+                };
+            }
+        });
+
+        return $.extait.w3w_modal;
+    }
+);
+//
+// define([
+//     'ko',
+//     'jquery',
+//     'mage/translate',
+//     'Magento_Ui/js/modal/modal'
+// ], function (ko, $, $t, modal) {
+//     'use strict';
+//
+//     return function (config, element) {
+//
+//         /**
+//          * Modal options
+//          */
 //         var options = {
 //             type: 'popup',
+//             title: $t('What3Words Modal Map'),
+//             modalClass: 'extait-w3w-popup',
 //             responsive: true,
-//             innerScroll: true,
-//             title: '',
-//             buttons: [{
-//                 text: $.mage.__('Close'),
-//                 class: '',
-//                 click: function () {
-//                     this.closeModal();
+//             buttons: [
+//                 {
+//                     text: $t('Cancel'),
+//                     class: 'action primary',
+//                     click: function() {
+//                         popup.closeModal();
+//                     }
 //                 }
-//             }]
+//             ]
 //         };
 //
 //         var popup = modal(options, $('#w3w-map-modal'));
-//         $(".w3w-icon-input").on('click',function(){
-//             console.log('renoten');
-//             $("#w3w-map-modal").modal("openModal");
-//         });
-//     }
-// );
-
-
-define(
-    [
-        "jquery",
-        "Magento_Ui/js/modal/modal"
-    ], function($){
-        var w3w_modal_map = {
-            initModal: function(config, element) {
-                $target = $(config.target);
-                $target.modal();
-                $element = $(element);
-                $element.click(function() {
-                    $target.modal('openModal');
-                });
-            }
-        };
-
-        return {
-            'w3w_modal': w3w_modal_map.initModal
-        };
-    }
-);
+//
+//         $(element).find('#w3w-map-link').on('click', function (event) {
+//             alert('hren');
+//             popup.openModal();
+//
+//             // return false;
+//         })
+//     };
+// });
+// alert('hren2');

@@ -26,7 +26,7 @@ class LayoutProcessorPlugin
             'config' => [
                 'customScope' => 'shippingAddress.custom_attributes',
                 'customEntry' => null,
-                'template' => 'ui/form/field',
+                'template' => 'Extait_W3W/form/w3wfield',
                 'elementTmpl' => 'Extait_W3W/form/element/w3winput',
             ],
             'dataScope' => 'shippingAddress.custom_attributes' . '.' . $customAttributeCode,

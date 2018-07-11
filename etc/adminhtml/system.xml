@@ -8,11 +8,16 @@
             <resource>Extait_W3W::w3w_config</resource>
             <group id="general" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="0" showInStore="0">
                 <label>General Settings</label>
-                <field id="w3w_api_key" translate="label comment" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="w3w_only" translate="label comment" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Use W3W only</label>
+                    <comment>Only What3Words will be used as address.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="w3w_api_key" translate="label comment" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>What3Words API key</label>
                     <comment>Enter your What3Words API key.</comment>
                 </field>
-                <field id="google_api_key" translate="label comment" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="google_api_key" translate="label comment" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Google API key</label>
                     <comment>Enter your Google API key.</comment>
                 </field>
