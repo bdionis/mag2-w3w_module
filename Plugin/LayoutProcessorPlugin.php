@@ -22,7 +22,7 @@ class LayoutProcessorPlugin
     {
         $customAttributeCode = 'w3w';
         $customField = [
-            'component' => 'Magento_Ui/js/form/element/abstract',
+            'component' => 'Extait_W3W/js/form/element/abstract',
             'config' => [
                 'customScope' => 'shippingAddress.custom_attributes',
                 'customEntry' => null,

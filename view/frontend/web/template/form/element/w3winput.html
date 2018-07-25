@@ -12,24 +12,17 @@
         id: uid,
         disabled: disabled
     }" />
-    <!--<a id="w3w-map-link"-->
-       <!--href="#w3w-map-modal"-->
-        <i id="w3w-map-link"
-           class="w3w-icon w3w-icon-input"
-           title="W3W Map"
-           data-mage-init='{"Extait_W3W/js/w3w_modal": {}}'>&#x3f;</i>
-    <!--</a>-->
+    <i id="w3w-map-link"
+       class="w3w-icon w3w-icon-input"
+       title="W3W Map"
+       data-bind="click: showMap">&#x3f;</i>
 </div>
 
 <div id="w3w-map-modal" style="display: none">
-    <div>W3W Map will be there</div>
+    <input id="w3w-map-input" type="text"
+           placeholder="Enter a location" />
+    <div id="w3w_map_div"></div>
+    <div id="infowindow-content">
+        <span id="place-address"></span>
+    </div>
 </div>
-
-
-<script type="text/x-magento-init">
-    {
-        "#w3w-map-modal": {
-            "Extait_W3W/js/w3w_modal": {}
-        }
-    }
-</script>
