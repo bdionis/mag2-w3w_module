@@ -29,7 +29,7 @@ class LayoutProcessorPlugin
                 'template' => 'Extait_W3W/form/w3wfield',
                 'elementTmpl' => 'Extait_W3W/form/element/w3winput',
             ],
-            'dataScope' => 'shippingAddress.custom_attributes' . '.' . $customAttributeCode,
+            'dataScope' => 'shippingAddress.' . $customAttributeCode,
             'label' => 'What3Words',
             'provider' => 'checkoutProvider',
             'sortOrder' => 0,

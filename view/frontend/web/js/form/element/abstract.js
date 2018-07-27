@@ -23,6 +23,12 @@ define([
 
         getPopupW3WMapOptions: function () {
 
+            function closeActionPopup () {
+                $('#w3w-map-input').insertBefore($('#w3w_map_div'));
+                $('#infowindow-content').insertAfter($('#w3w_map_div'));
+                $('#w3w-words-result-container').insertAfter($('#w3w_map_div'));
+            }
+
             return {
                 type: 'popup',
                 responsive: true,
@@ -30,17 +36,21 @@ define([
                 title: w3wMapOptions.modalTitle,
                 modalClass: w3wMapOptions.modalClass,
                 buttons: [{
-                    text: $t('Close'),
+                    text: $t('Accept'),
                     class: 'action primary',
                     click: function () {
                         var popup = this;
-                        $('#w3w-map-input').insertBefore($('#w3w_map_div'));
+                        var w3w_input_value = $('.w3w_address').text();
+                        if (w3w_input_value !== '-------.-------.-------') {
+                            $('.w3w-input').val(w3w_input_value);
+                        }
+                        closeActionPopup();
                         popup.closeModal();
                     }
                 }],
                 modalCloseBtnHandler: function () {
                     var popup = this;
-                    $('#w3w-map-input').insertBefore($('#w3w_map_div'));
+                    closeActionPopup();
                     popup.closeModal();
                 }
             };
